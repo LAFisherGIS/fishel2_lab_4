@@ -49,7 +49,7 @@ function mapping(){
           else{
               L.circle(e.latlng, radius, {color: 'red'}).addTo(map);
           }
-          
+
     var times = SunCalc.getTimes(new Date(), e.latitude, e.longitude);
     var sunrise = times.sunrise.getHours();
     var sunset = times.sunset.getHours();
@@ -65,14 +65,26 @@ function mapping(){
         }
   }
 
-  map.on('locationfound', onLocationFound); //this is the event listener
 
-  function onLocationError(e) {
-    alert(e.message);
+  var baseMaps = {"Light Mode": light, "Dark Mode": dark};
+
+      var myControl = L.control.layers(baseMaps).addTo(map);
+
+  function geoLocate(){
+
+      map.on('locationfound', onLocationFound); //this is the event listener
+
+      function onLocationError(e) {
+        alert(e.message);
+      }
+
+      map.on('locationerror', onLocationError);
+
+      map.locate({setView: true, maxZoom: 16});
   }
 
-  map.on('locationerror', onLocationError);
+  var geolocationButton = L.easyButton("L.marker", geoLocate);
 
-  map.locate({setView: true, maxZoom: 16});
+  geolocationButton.addTo(map)
 
 }
