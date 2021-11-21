@@ -20,7 +20,7 @@ function mapping(){
   var light = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id:'mapbox/light-v10',
+    id:'lafishergis/ckvwum7mc30u214nxeoigeyr6',
     accessToken: 'sk.eyJ1IjoibGFmaXNoZXJnaXMiLCJhIjoiY2t2OXJ4dnV1YTY2ZjJwbnpjM3BxbWRnYiJ9.CW4oaT94TkbelBF0Fj4rJw',
     tileSize: 512,
     zoomOffset: -1,
@@ -29,7 +29,7 @@ function mapping(){
   var dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
-      id:'mapbox/dark-v10',
+      id:'lafishergis/ckvwv1qz354hp14s8pcasgvi8',
       accessToken: 'sk.eyJ1IjoibGFmaXNoZXJnaXMiLCJhIjoiY2t2OXJ4dnV1YTY2ZjJwbnpjM3BxbWRnYiJ9.CW4oaT94TkbelBF0Fj4rJw',
       tileSize: 512,
       zoomOffset: -1,
@@ -68,7 +68,7 @@ function mapping(){
 
   var baseMaps = {"Light Mode": light, "Dark Mode": dark};
 
-      var myControl = L.control.layers(baseMaps).addTo(map);
+  var myControl = L.control.layers(baseMaps).addTo(map);
 
   function geoLocate(){
 

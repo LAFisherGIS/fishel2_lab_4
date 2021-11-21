@@ -71,23 +71,15 @@ div.leaflet-popup-tip {
   color: var(--textchroma);
 }
 
-div.leaflet-routing-container {
+.leaflet-control-layers-toggle {
   background-color: var(--backgroundchroma);
-  color: var(--textchroma);
 }
 
-#informational {
-  color: var(--textchroma);
-}
-
-div.leaflet-routing-container.leaflet-bar.leaflet-control {
+.leaflet-control-layers-list {
   background-color: var(--backgroundchroma);
   color: var(--textchroma);
-}
-
-col.leaflet-routing-instruction-icon {
-  background-color: var(--backgroundchroma);
-  color: var(--textchroma);
+  margin: -1em;
+  padding: 1em;
 }
 
 /*
@@ -154,14 +146,6 @@ p{
   font-weight: bold;
   text-align: left;
 }
-
-
-div#references{
-  background-color: red;
-  color: white;
-  padding: 1em;
-}
-
 
 a:link{
   color: gray;

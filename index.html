@@ -4,7 +4,7 @@
     <title></title>
 		<meta charset="utf-8">
 		<meta name="author" content="Liam Fisher">
-		<meta name="description" content="">
+		<meta name="description" content="Time and Place - A Geolocation Demonstration">
 		<html lang="en-US">
 		<link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -24,10 +24,10 @@
       <!-- The below is a component in the form of lightmode/darkmode selector integrated into this website. Thanks to Rafael Morais for the reference implementation. https://rafael.no/blog/implementing-dark-mode-without-javascript/ https://codepen.io/rafaelsnts/pen/BEzZoX-->
 		    <input type="checkbox" id="lightordark">
 		    <label for="lightordark" class="modeselect">Lightmode/Darkmode</label>
+				<h2>Time and Place - A Geolocation Demonstration</h2>
       <!-- End of lightmode/darkmode HTML-side controls. -->
 		    <div class="pagecontent">
-					<h3>Time and Place</h3>
-					<p>This map is going to request permission to access your location, for the sake of zooming in on the place it thinks that is and determining whether the sun is or is not up there - to alter the basemap in use. This information will not be stored nor delivered to any outside party.</p>
+					<p>If you press the blank button on the left, this map will request permission to geolocate the device you are accessing it from. This information will be used to zoom in on that estimated location, to provide an estimate of the level of accuracy regarding that estimate (a red circle), and to determine whether or not the sun is currently in the sky there to determine if a bright or dark map is better (if you disagree with it, you can use the control in the top right to manually reselect the color of the map). Please press the button only once, unless you move a substantial distance between clicks. This information will not be stored nor delivered to any outside party.</p>
         	<div id="map"></div>
 		    </div>
 		</div>
